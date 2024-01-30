@@ -1,0 +1,6 @@
+<h1>Sharing function call from Angular to React</h1>
+Value of counter: {{counter}} <br />
+<button (click)="increaseCounterByOne()">Increase</button>
+
+<react-convertor (handleClickEmitter)="increaseCounterByOne()" [component]="reactCounter"
+    [counter]="counter"></react-convertor>
